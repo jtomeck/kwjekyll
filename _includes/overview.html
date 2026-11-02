@@ -1,10 +1,10 @@
 <section id="overview" class="py-20 md:py-28">
   <div class="site-container grid gap-14 lg:grid-cols-[1.3fr_1fr] lg:items-start">
-    <div>
+    <div class="section-description">
       {% if page.overview.subheadline %}
-        <p class="mb-4 text-xs font-bold uppercase tracking-[0.22em] text-primary">{{ page.overview.subheadline | escape }}</p>
+        <p class="section-eyebrow">{{ page.overview.subheadline | escape }}</p>
       {% endif %}
-      <h2 class="max-w-2xl text-3xl font-bold tracking-tight text-neutral md:text-4xl">{{ page.overview.headline | escape }}</h2>
+      <h2 class="section-title">{{ page.overview.headline | escape }}</h2>
       {% if page.overview.paragraphs %}
         <div class="prose mt-7 max-w-none text-base-content/70">
           {% for paragraph in page.overview.paragraphs %}
