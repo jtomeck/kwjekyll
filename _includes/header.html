@@ -5,7 +5,7 @@
     </a>
     <nav class="hidden min-w-0 items-center xl:flex" aria-label="Fixed page navigation">
       {% for item in site.data.site.navigation %}
-        <a class="btn btn-ghost btn-sm whitespace-nowrap font-medium text-neutral" href="{{ item.url }}">{{ item.label | escape }}</a>
+        <a class="btn btn-ghost whitespace-nowrap font-medium text-neutral" href="{{ item.url }}">{{ item.label | escape }}</a>
       {% endfor %}
     </nav>
     <div class="ml-auto flex shrink-0 items-center gap-2">
@@ -15,7 +15,7 @@
           {% for item in site.data.site.navigation %}<li><a href="{{ item.url }}">{{ item.label | escape }}</a></li>{% endfor %}
         </ul>
       </details>
-      <a class="btn btn-secondary btn-sm shrink-0 whitespace-nowrap rounded-none" href="{{ site.data.site.cta.button.url | relative_url }}">{{ site.data.site.cta.button.label | escape }}</a>
+      <a class="btn btn-secondary shrink-0 whitespace-nowrap rounded-none" href="{{ site.data.site.cta.button.url | relative_url }}">{{ site.data.site.cta.button.label | escape }}</a>
     </div>
   </div>
 </header>
